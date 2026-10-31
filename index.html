@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codecraft</title>
+</head>
+<body>
+    <header>
+        <h1>CODE CRAFT</h1>
+        <p>Learn . Code . Create</p>
+    </header>
+    
+    <main>
+        <h2>Registration Form</h2>
+
+    <form>
+          
+         <fieldset>
+
+              <legend>Personal Information</legend>
+        
+       <label for="fullname">Full name:</label>
+        <input type="text" id="fullname" name="fullname"
+               placeholder="Enter your name"
+               required minlength="3">
+     <br/>
+     <br/>
+        <label for="email">Email-ID:</label>
+        <input type="email" id="email" name="email"
+               placeholder="Enter your Email-ID"  
+               required>   
+     <br/>
+     <br/>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"
+               placeholder="Enter Password"
+               required minlength="8">
+     <br/>
+     <br/>
+        <label for="phonenumber">Phone Number:</label>
+        <input type="tel" id="phonenumber" name="phonenumber"
+               placeholder="Enter your phone number"
+               pattern="[0-9]{10}" required>
+     <br/>
+     <br/>
+        <label for="DOB">Date of Birth:</label>
+        <input type="date" id="DOB" name="DOB"
+               required>
+     <br/>
+     <br/>
+          <label>Gender:</label>
+       <input type="radio" id="male" name="gender" value="Male">
+       <label for="male">Male</label>
+       <input type="radio" id="female" name="gender" value="Female">
+       <label for="female">Female</label>
+     <br/>
+     <br/>
+     <select name="Country" id="Country">
+                <option value="">Select your country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Japan">Japan</option> 
+                <option value="China">China</option>
+                <option value="UK">UK</option> </select>
+
+         </fieldset>
+     <br/>
+         <fieldset>
+                <legend>Course Details</legend>
+
+        <h3>Choose your interest</h3>
+          <input type="checkbox" id="Web-Development" name="course">
+          <label for="Web-Development">Web Development</label>
+          <br/>
+          <input type="checkbox" id="Data-Science" name="course">
+          <label for="Data-Science">Data Science</label>
+          <br/>
+          <input type="checkbox" id="AI-ML" name="course">
+          <label for="AI-ML">AI-ML</label>
+          <br/>
+          <input type="checkbox" id="DevOps" name="course">
+          <label for="DevOps">DevOps</label>
+          <br/>
+          <br/>
+          <label for="Batch-timing">Batch Timing:</label>
+          <select name="Batch timing" id="Batch-timing">
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option></select>
+                 
+         </fieldset>
+     <br/>  
+         <fieldset>
+              <legend>Statement of Purpose</legend>         
+        <textarea id="about" name="about"
+                 rows="5" cols="30"
+                 maxlength="300"
+                 placeholder="Short Statement of Purpose"></textarea>
+         </fieldset>
+     <br/>
+     <br/>
+         <fieldset>
+            <legend>Terms and Conditions</legend>
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms">I agree to the Terms and Conditions.</label>   
+          </fieldset>
+     <br/>
+     <br/>
+           <button type="submit">Register Now</button>
+           <button type="reset">Reset Form</button>
+   
+        </form>
+    </main>
+
+    <footer>
+        <p>Contact us:
+            codecraft123@gmail.com
+        </p>
+    </footer>
+</body>
+</html>
